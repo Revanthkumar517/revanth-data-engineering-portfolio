@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revanth Kumar Narra | Data Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Revanth Kumar Narra, Entry-Level Data Engineer skilled in Python, SQL, AWS, ETL, Snowflake, Airflow, dbt, Docker, and Terraform." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Revanth Narra</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Entry-Level Data Engineer</p>
+        <h1>Building reliable ETL pipelines, cloud data workflows, and analytics-ready datasets.</h1>
+        <p class="hero-text">
+          I am a Data Engineer based in Fremont, CA with 16+ months of hands-on experience in ETL pipeline development,
+          SQL-based data processing, Python automation, PostgreSQL, and AWS cloud services.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="resume.docx" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Core Stack</h2>
+        <ul>
+          <li>Python, SQL, PostgreSQL</li>
+          <li>AWS S3, EC2, IAM</li>
+          <li>Snowflake, dbt, Airflow</li>
+          <li>Docker, Terraform, Git</li>
+          <li>Great Expectations, Pandas, NumPy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Data engineering candidate focused on clean pipelines and useful data.</h2>
+      </div>
+      <p>
+        I work with Python, SQL, PostgreSQL, AWS, Snowflake, Airflow, dbt, Docker, Terraform, and Great Expectations
+        to build batch data workflows, validate data quality, transform raw datasets, and prepare data for analytics and reporting.
+        My background includes internship experience at Tech Mahindra and project work in cloud lakehouse pipelines and unstructured
+        document processing.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>Python, SQL, Regex</p>
+        </div>
+        <div class="skill-card">
+          <h3>Data Engineering</h3>
+          <p>ETL, ELT, Data Ingestion, Data Transformation, Data Cleaning, Data Validation, Batch Processing</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud</h3>
+          <p>AWS S3, EC2, IAM, Lambda, RDS, Redshift, Athena, Glue, CloudWatch</p>
+        </div>
+        <div class="skill-card">
+          <h3>Databases & Warehousing</h3>
+          <p>PostgreSQL, Snowflake, Relational Databases, Dimensional Modeling</p>
+        </div>
+        <div class="skill-card">
+          <h3>Orchestration & Transformation</h3>
+          <p>Apache Airflow, dbt</p>
+        </div>
+        <div class="skill-card">
+          <h3>Infrastructure & Quality</h3>
+          <p>Docker, Terraform, Git, Linux, Great Expectations</p>
+        </div>
+        <div class="skill-card">
+          <h3>Python Libraries</h3>
+          <p>Pandas, NumPy, Scikit-learn, spaCy, NLTK, PyMuPDF, Python-docx</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Data engineering projects</h2>
+      </div>
+
+      <article class="project-card">
+        <div class="project-content">
+          <h3>Cloud Lakehouse ELT Pipeline</h3>
+          <p class="tech-stack">AWS · Snowflake · dbt · Apache Airflow · Docker · Terraform · Great Expectations · Python · SQL</p>
+          <p>
+            Designed an end-to-end ELT pipeline to ingest mock e-commerce datasets, store raw files in AWS S3,
+            load data into Snowflake, validate data quality, and transform raw data into analytics-ready tables using dbt.
+          </p>
+          <ul>
+            <li>Built Python ingestion scripts for raw CSV loading into AWS S3.</li>
+            <li>Created Airflow DAGs to orchestrate ingestion, validation, loading, and dbt transformation tasks.</li>
+            <li>Implemented dbt models and tests for null checks, uniqueness, primary keys, and referential integrity.</li>
+            <li>Used Great Expectations for schema validation and data quality checks.</li>
+            <li>Containerized the local development environment using Docker.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+            <a href="assets/cloud-lakehouse-architecture.svg" target="_blank" rel="noopener">Architecture</a>
+          </div>
+        </div>
+        <img src="assets/cloud-lakehouse-architecture.svg" alt="Cloud Lakehouse ELT Pipeline Architecture" />
+      </article>
+
+      <article class="project-card">
+        <div class="project-content">
+          <h3>Unstructured Data Ingestion & Processing Pipeline</h3>
+          <p class="tech-stack">Python · spaCy · NLTK · PyMuPDF · Python-docx · Regex · Scikit-learn</p>
+          <p>
+            Built a Python-based ingestion pipeline to extract, preprocess, structure, and classify unstructured text
+            from PDF and DOCX files using NLP and machine learning techniques.
+          </p>
+          <ul>
+            <li>Parsed PDF and DOCX documents using PyMuPDF and Python-docx.</li>
+            <li>Cleaned and normalized text using tokenization, stopword removal, and lemmatization.</li>
+            <li>Extracted emails, phone numbers, keywords, skills, and structured entities using Regex and spaCy Matcher.</li>
+            <li>Converted cleaned text into TF-IDF features and trained a Naive Bayes classifier.</li>
+            <li>Achieved 96.37% testing accuracy and 97.26% training accuracy.</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+            <a href="assets/unstructured-pipeline.svg" target="_blank" rel="noopener">Architecture</a>
+          </div>
+        </div>
+        <img src="assets/unstructured-pipeline.svg" alt="Unstructured Data Processing Pipeline Architecture" />
+      </article>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Professional experience</h2>
+      </div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <h3>Data Engineer</h3>
+            <p>Tech Mahindra · Hyderabad, India</p>
+          </div>
+          <span>Mar 2022 – Jul 2023</span>
+        </div>
+        <ul>
+          <li>Developed automated ETL pipelines using Python, SQL, and PostgreSQL for reporting and analytics datasets.</li>
+          <li>Wrote SQL queries, joins, views, and stored procedures to support backend data processing.</li>
+          <li>Built Python automation scripts for recurring ingestion, file processing, validation, and transformation tasks.</li>
+          <li>Performed data profiling, cleaning, deduplication, null handling, and validation checks.</li>
+          <li>Supported AWS S3 and EC2-based data processing workflows and assisted with IAM permission configuration.</li>
+          <li>Troubleshot ETL failures, SQL errors, data mismatches, duplicate records, and pipeline execution issues.</li>
+        </ul>
+        <p class="tools-used"><strong>Tools Used:</strong> Python, SQL, PostgreSQL, AWS S3, AWS EC2, AWS IAM, Pandas, NumPy, Git, Linux, Excel</p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Education</p>
+        <h2>Education</h2>
+      </div>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3>Belhaven University</h3>
+          <p>Master of Science in Information Technology Management</p>
+          <span>Aug 2025</span>
+        </div>
+        <div class="education-card">
+          <h3>Jawaharlal Nehru Technological University Hyderabad</h3>
+          <p>Bachelor of Technology in Computer Science and Engineering</p>
+          <span>Mar 2023</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect</h2>
+      </div>
+      <p>
+        I am actively seeking full-time Data Engineering opportunities on F1-OPT.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:revanthnarra07@gmail.com">revanthnarra07@gmail.com</a>
+        <a href="tel:+15103999442">510-399-9442</a>
+        <a href="https://www.linkedin.com/in/revanthnarra/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Revanthkumar517" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Revanth Kumar Narra. Built for Data Engineering roles.</p>
+  </footer>
+</body>
+</html>
