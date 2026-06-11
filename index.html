@@ -183,40 +183,94 @@
       </div>
 
       <article class="project-showcase project-one">
-        <div class="project-badge">Featured Project 01</div>
-        <div class="project-content">
-          <h3>Cloud Lakehouse ELT Pipeline</h3>
-          <p class="tech-stack">AWS · Snowflake · dbt · Apache Airflow · Docker · Terraform · Great Expectations · Python · SQL</p>
-          <p>
-            Designed an end-to-end ELT pipeline to ingest mock e-commerce datasets, store raw files in AWS S3,
-            load data into Snowflake, validate data quality, and transform raw data into analytics-ready tables using dbt.
-          </p>
+  <div class="project-badge">Featured Project 01</div>
 
-          <div class="impact-row">
-            <span>Automated ingestion</span>
-            <span>Data validation</span>
-            <span>dbt modeling</span>
-            <span>Airflow orchestration</span>
-          </div>
+  <div class="project-content">
+    <h3>AWS Cloud Lakehouse ELT Pipeline</h3>
 
-          <ul>
-            <li>Built Python ingestion scripts for raw CSV loading into AWS S3.</li>
-            <li>Created Airflow DAGs for ingestion, validation, Snowflake loading, and dbt transformations.</li>
-            <li>Implemented dbt tests for null checks, uniqueness, primary keys, and referential integrity.</li>
-            <li>Used Great Expectations for schema validation and data quality checks.</li>
-            <li>Containerized the development environment using Docker.</li>
-          </ul>
+```
+<p class="tech-stack">
+  AWS S3 · AWS Glue · PySpark · Amazon Athena · dbt · Apache Airflow ·
+  Docker · Terraform · Great Expectations · GitHub Actions · Python · SQL
+</p>
 
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">Add GitHub Repo</a>
-            <a href="assets/cloud-lakehouse-architecture.svg" target="_blank" rel="noopener">View Architecture</a>
-          </div>
-        </div>
+<p>
+  Built an end-to-end AWS cloud lakehouse ELT pipeline that generates and
+  validates e-commerce data, stores raw datasets in Amazon S3, transforms
+  CSV files into partitioned Parquet using AWS Glue PySpark, catalogs the
+  datasets with Glue Crawlers, builds analytics models with dbt, and
+  orchestrates the complete workflow using Apache Airflow.
+</p>
 
-        <div class="project-visual">
-          <img src="assets/cloud-lakehouse-architecture.svg" alt="Cloud Lakehouse ELT Pipeline Architecture" />
-        </div>
-      </article>
+<div class="impact-row">
+  <span>3,000 orders processed</span>
+  <span>Partitioned Parquet</span>
+  <span>dbt dimensional models</span>
+  <span>Airflow orchestration</span>
+</div>
+
+<ul>
+  <li>
+    Generated and processed 500 customer records, 100 product records, and
+    3,000 order records across raw, curated, and analytics layers.
+  </li>
+  <li>
+    Developed an AWS Glue PySpark transformation job to clean, deduplicate,
+    and convert raw CSV datasets into compressed Parquet files.
+  </li>
+  <li>
+    Partitioned order data by order status and queried curated datasets
+    through Amazon Athena.
+  </li>
+  <li>
+    Built dbt staging models, customer and product dimensions, and an order
+    fact table with automated data tests.
+  </li>
+  <li>
+    Orchestrated data generation, validation, S3 ingestion, Glue processing,
+    dbt execution, and Athena validation using Apache Airflow.
+  </li>
+  <li>
+    Provisioned AWS infrastructure with Terraform and added GitHub Actions
+    checks for Python data validation and Terraform configuration.
+  </li>
+</ul>
+
+<div class="project-links">
+  <a
+    href="https://github.com/Revanthkumar517/aws-cloud-lakehouse-elt-pipeline"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View GitHub Repository
+  </a>
+
+  <a
+    href="https://github.com/Revanthkumar517/aws-cloud-lakehouse-elt-pipeline/blob/main/docs/architecture_diagram.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Architecture
+  </a>
+</div>
+```
+
+  </div>
+
+  <div class="project-visual">
+    <a
+      href="https://github.com/Revanthkumar517/aws-cloud-lakehouse-elt-pipeline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="https://raw.githubusercontent.com/Revanthkumar517/aws-cloud-lakehouse-elt-pipeline/main/docs/architecture_diagram.png"
+        alt="AWS Cloud Lakehouse ELT Pipeline Architecture"
+      />
+    </a>
+  </div>
+</article>
+
 
       <article class="project-showcase project-two">
         <div class="project-badge">Featured Project 02</div>
